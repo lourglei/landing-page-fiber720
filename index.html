@@ -5,179 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiber720 | CRM para Pequenos Negócios</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header
-      style="
-        position: sticky;
-        top: 0;
-        z-index: 999;
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        border-bottom: 1px solid #eee;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-      "
-    >
-      <div
-        style="
-          max-width: 1200px;
-          margin: auto;
-          padding: 1.5rem 2rem;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-        "
-      >
-        <div
-          class="logo"
-          style="
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 2rem;
-            color: #a8dadc;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-          "
-        >
-          fiber<span style="color: #b9b4fd">720</span>
+    <header>
+      <div class="container">
+        <div class="logo">
+          fiber<span>720</span>
         </div>
-        <nav style="display: flex; gap: 2rem">
-          <a
-            href="#"
-            style="
-              font-family: 'Montserrat', sans-serif;
-              color: #333;
-              text-decoration: none;
-              font-size: 1.1rem;
-              transition: color 0.3s ease;
-            "
-            >Funcionalidades</a
-          >
-          <a
-            href="#"
-            style="
-              font-family: 'Montserrat', sans-serif;
-              color: #333;
-              text-decoration: none;
-              font-size: 1.1rem;
-              transition: color 0.3s ease;
-            "
-            >Público</a
-          >
-          <a
-            href="#"
-            style="
-              font-family: 'Montserrat', sans-serif;
-              color: #333;
-              text-decoration: none;
-              font-size: 1.1rem;
-              transition: color 0.3s ease;
-            "
-            >Contato</a
-          >
+        <nav>
+          <a href="#" class="button button-primary">Começar agora grátis</a>
         </nav>
       </div>
     </header>
 
-    <!-- [Sessão 1] Cabeçalho com botão -->
-    <section >
-      <div
-        style="
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          justify-content: space-between;
-          gap: 4rem;
-          max-width: 1200px;
-          margin: auto;
-        "
-      >
-        <div style="flex: 1; min-width: 280px; max-width: 520px">
-          <h2
-            style="
-              font-family: 'Poppins', sans-serif;
-              font-size: 2.5rem;
-              color: #1c1c1c;
-              margin-bottom: 1rem;
-            "
-          >
-            Controle simples para crescer com confiança
-          </h2>
-          <p
-            style="
-              font-size: 1.2rem;
-              color: #555;
-              line-height: 1.8;
-              margin-bottom: 2rem;
-            "
-          >
+    <section class="hero">
+      <div class="container">
+        <div class="text">
+          <h1>Controle simples para crescer com confiança</h1>
+          <p>
             Transforme seu atendimento comercial com um CRM pensado para a
             rotina real de pequenos negócios. Leve, visual e direto ao ponto.
           </p>
-          <a
-            href="#"
-            style="
-              background-color: #6bd6b8;
-              color: white;
-              padding: 1rem 2rem;
-              text-decoration: none;
-              border-radius: 8px;
-              font-weight: bold;
-              font-size: 1rem;
-            "
-            >Quero experimentar</a
-          >
+          <div class="cta-group">
+            <a href="#" class="button button-primary">Quero experimentar</a>
+            <a href="#" class="button button-outline">Ver demonstração</a>
+          </div>
         </div>
-        <div style="flex: 1; min-width: 280px; max-width: 400px">
+        <div class="image">
           <img
             src="img/ilustracao_fiber720_1_transparente.png"
             alt="Checklist"
-            style="width: 100%"
           />
         </div>
       </div>
     </section>
 
-    <!-- [Sessão 2] Problema comum -->
-    <section >
-      <div
-        style="
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          justify-content: space-between;
-          gap: 4rem;
-          max-width: 1200px;
-          margin: auto;
-        "
-      >
-        <div style="flex: 1; min-width: 280px; max-width: 400px">
+    <section id="funcionalidades" class="alt">
+      <div class="container">
+        <div class="image">
           <img
             src="img/ilustracao_fiber720_2_transparente.png"
             alt="Cliente atrasado"
-            style="width: 100%"
           />
         </div>
-        <div style="flex: 1; min-width: 280px; max-width: 520px">
-          <h2
-            style="
-              font-family: 'Poppins', sans-serif;
-              font-size: 2.25rem;
-              color: #1c1c1c;
-              margin-bottom: 1rem;
-            "
-          >
-            Funil automático e alertas inteligentes
-          </h2>
-          <p style="font-size: 1.2rem; color: #555; line-height: 1.8">
+        <div class="text">
+          <h2>Funil automático e alertas inteligentes</h2>
+          <p>
             Não deixe nenhuma oportunidade escapar. O Fiber720 atualiza
             automaticamente o estágio de cada lead, envia lembretes e ajuda você
             a priorizar quem está pronto para avançar.
           </p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <h3>Automação Inteligente</h3>
+              <p>Atualização automática do funil de vendas</p>
+            </div>
+            <div class="feature-card">
+              <h3>Alertas em Tempo Real</h3>
+              <p>Notificações para oportunidades quentes</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -295,8 +186,8 @@
             "
           >
             <p style="font-size: 1.1rem; color: #555; font-style: italic">
-              “Com o Fiber720 parei de esquecer meus retornos. Consigo
-              acompanhar tudo com clareza. Simples e eficiente.”
+              "Com o Fiber720 parei de esquecer meus retornos. Consigo
+              acompanhar tudo com clareza. Simples e eficiente."
             </p>
             <p style="margin-top: 1rem; font-weight: bold; color: #333">
               Carlos Souza, Representante Comercial
@@ -314,8 +205,8 @@
             "
           >
             <p style="font-size: 1.1rem; color: #555; font-style: italic">
-              “Meus atendimentos são mais rápidos, organizados e eu passo mais
-              profissionalismo. Recomendo demais.”
+              "Meus atendimentos são mais rápidos, organizados e eu passo mais
+              profissionalismo. Recomendo demais."
             </p>
             <p style="margin-top: 1rem; font-weight: bold; color: #333">
               Patrícia Lima, Salão de Beleza
@@ -333,8 +224,8 @@
             "
           >
             <p style="font-size: 1.1rem; color: #555; font-style: italic">
-              “Já testei CRMs caros e complicados. O Fiber720 tem tudo o que
-              preciso e cabe no meu bolso.”
+              "Já testei CRMs caros e complicados. O Fiber720 tem tudo o que
+              preciso e cabe no meu bolso."
             </p>
             <p style="margin-top: 1rem; font-weight: bold; color: #333">
               Juliana Reis, Loja de Gás
@@ -459,133 +350,75 @@
       </div>
     </section>
 
-    <!-- [Sessão 7] Chamada Final -->
-    <section >
-      <div style="max-width: 800px; margin: auto; text-align: center">
-        <h2
-          style="
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.5rem;
-            color: #1c1c1c;
-            margin-bottom: 1.5rem;
-          "
-        >
-          Pronto para transformar seu atendimento?
-        </h2>
-        <p
-          style="
-            font-size: 1.2rem;
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 2.5rem;
-          "
-        >
+    <section class="cta-section">
+      <div class="container">
+        <h2>Pronto para transformar seu atendimento?</h2>
+        <p>
           Comece a usar o Fiber720 agora mesmo e veja como é fácil organizar
           seus contatos, acelerar suas vendas e ter mais tranquilidade no dia a
           dia.
         </p>
-        <a
-          href="#"
-          class="button"
-          style="
-            background-color: #6bd6b8;
-            color: white;
-            padding: 1rem 2.5rem;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 1.2rem;
-          "
-          >Quero experimentar gratuitamente</a
-        >
+        <a href="#" class="button button-primary">Começar agora grátis</a>
       </div>
     </section>
 
-    <!-- [Sessão 8] Formulário de interesse -->
-    <section >
-      <div style="max-width: 600px; margin: auto; text-align: center">
-        <h2
-          style="
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.25rem;
-            color: #1c1c1c;
-            margin-bottom: 1rem;
-          "
-        >
-          Receba novidades e dicas exclusivas
-        </h2>
-        <p style="font-size: 1.1rem; color: #555; margin-bottom: 2rem">
-          Deixe seu nome e e-mail para receber conteúdos úteis e novidades sobre
-          o Fiber720.
-        </p>
+    <section class="newsletter-section">
+      <div class="container">
+        <h2>Receba novidades e dicas exclusivas</h2>
+        <p>Deixe seu nome e e-mail para receber conteúdos úteis e novidades sobre o Fiber720.</p>
         <form
           action="https://docs.google.com/forms/d/e/1FAIpQLSdU9OKdb1CWrs53xEY44vJAXzBdaOgXFh2OSh_UeOaLMIRyoA/formResponse"
           method="POST"
           target="_blank"
-          style="display: flex; flex-direction: column; gap: 1rem"
+          class="newsletter-form"
         >
           <input
             type="text"
             name="entry.1003322663"
             placeholder="Seu nome"
             required
-            style="
-              padding: 1rem;
-              border-radius: 8px;
-              border: 1px solid #ccc;
-              font-size: 1rem;
-            "
           />
           <input
             type="email"
             name="entry.1752495880"
             placeholder="Seu e-mail"
             required
-            style="
-              padding: 1rem;
-              border-radius: 8px;
-              border: 1px solid #ccc;
-              font-size: 1rem;
-            "
           />
           <input
             type="tel"
             name="entry.876193107"
             placeholder="Seu telefone"
             required
-            style="
-              padding: 1rem;
-              border-radius: 8px;
-              border: 1px solid #ccc;
-              font-size: 1rem;
-            "
           />
-          <button
-            type="submit"
-            style="
-              background-color: #6bd6b8;
-              color: white;
-              padding: 1rem;
-              border: none;
-              border-radius: 8px;
-              font-weight: bold;
-              font-size: 1rem;
-              cursor: pointer;
-            "
-          >
+          <button type="submit" class="button button-primary">
             Quero receber novidades
           </button>
         </form>
       </div>
     </section>
 
-    <!-- [Rodapé] -->
     <footer>
-      <p>&copy; 2025 Fiber720. Todos os direitos reservados.</p>
-      <p>
-        <a href="#">Termos de Uso</a>| <a href="#">Política de Privacidade</a>|
-        <a href="#">Contato</a>
-      </p>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Produto</h4>
+              <a href="#">Funcionalidades</a>
+              <a href="#">Preços</a>
+              <a href="#">Integrações</a>
+            </div>
+            <div class="footer-column">
+              <h4>Empresa</h4>
+              <a href="#">Sobre nós</a>
+              <a href="#">Blog</a>
+              <a href="#">Contato</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Fiber720. Todos os direitos reservados.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
