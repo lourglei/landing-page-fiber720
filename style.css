@@ -1,4 +1,7 @@
   :root {
+  --cor-card-hover: #ffffff;
+  --cor-card-shadow: rgba(0, 0, 0, 0.08);
+
     --cor-principal: #6BD6B8;
     --cor-hover: #97ccc7;
     --cor-apoio: #B9B4FD;
@@ -24,7 +27,7 @@
     border-bottom: 1px solid #ddd;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   }
-  section { padding: 3.5rem 1.5rem; }
+  section { padding: 4rem 1.5rem; animation: fadeIn 0.8s ease both; }
   h1 {
     font-size: 3rem;
     color: var(--texto-claro);
