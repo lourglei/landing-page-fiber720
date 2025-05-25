@@ -149,9 +149,10 @@
   }
   footer {
     background-color: var(--cor-secundaria);
-    padding: 3rem 2rem 2rem;
+    padding: 3rem 2rem 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: relative;
   }
   footer a {
     color: #777;
@@ -287,9 +288,10 @@
     grid-template-columns: 1fr;
     gap: 2rem;
     max-width: 1200px;
-    margin: 0 auto 2rem;
+    margin: 0 auto;
     align-items: center;
     text-align: center;
+    padding-bottom: 8rem;
   }
   .footer-logo {
     max-width: 300px;
@@ -335,12 +337,21 @@
     color: var(--cor-principal);
   }
   .footer-bottom {
-    padding-top: 2rem;
+    padding: 1rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
     color: var(--texto-suave);
+    background-color: var(--cor-secundaria);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
   }
   .newsletter-section {
     background-color: var(--cor-secundaria);
@@ -426,5 +437,112 @@
     }
     .newsletter-form {
       padding: 0 1rem;
+    }
+  }
+
+  /* Estilos para a página Sobre Nós */
+  .about-hero {
+    background: linear-gradient(135deg, var(--cor-destaque) 0%, var(--cor-secundaria) 100%);
+    text-align: center;
+  }
+
+  .about-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, var(--cor-principal), var(--cor-apoio));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+  }
+
+  .about-hero p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  .mission-section {
+    padding: 4rem 2rem;
+    background-color: white;
+  }
+
+  .mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .mission-card {
+    background: var(--cor-secundaria);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(79, 70, 229, 0.1);
+    text-align: center;
+  }
+
+  .mission-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    border-color: rgba(79, 70, 229, 0.2);
+  }
+
+  .mission-card h2 {
+    color: var(--cor-principal);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-left: none;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .mission-card p {
+    text-align: center;
+    line-height: 1.8;
+    color: var(--texto-suave);
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .mission-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem auto 0;
+    max-width: 200px;
+    text-align: left;
+  }
+
+  .mission-card ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--texto-suave);
+    font-size: 1.1rem;
+  }
+
+  .mission-card ul li::before {
+    content: "•";
+    color: var(--cor-principal);
+    position: absolute;
+    left: 0;
+  }
+
+  @media (max-width: 768px) {
+    .about-hero h1 {
+      font-size: 2.5rem;
+    }
+    
+    .about-hero p {
+      font-size: 1.1rem;
+    }
+    
+    .mission-grid {
+      grid-template-columns: 1fr;
     }
   }
